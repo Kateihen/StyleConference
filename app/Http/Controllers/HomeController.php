@@ -18,4 +18,9 @@ class HomeController extends Controller
 
 		return view('speakers', ['speakers' => $speakers]);
 	}
+
+	public function venue()
+	{
+		return view ('venue');
+	}
 }

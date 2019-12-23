@@ -11,7 +11,7 @@
 			<div class="grid">
 				<section class="teaser col-1-3">
 					<h5>Speakers</h5>
-					<a href="speakers.html" target="_blank">
+					<a href="/speakers">
 						<img src="{{ URL::asset('img/home/speakers.jpg') }}" alt="Professional speaker">
 						<h3>World-Class Speakers</h3>
 					</a>
@@ -29,7 +29,7 @@
 				Venue
 				--><section class="teaser col-1-3">
 					<h5>Venue</h5>
-						<a href="venue.html" target="_blank">
+						<a href="/venue">
 							<img src="{{ URL::asset('img/home/venue.jpg') }}" alt="Chicago">
 							<h3>The Chicago Theatre</h3>
 						</a>

@@ -13,3 +13,4 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('/speakers', 'HomeController@speakers');
+Route::get('/venue', 'HomeController@venue');

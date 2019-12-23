@@ -22,7 +22,7 @@
 					<li><a href="/">Home</a></li><!--
 					--><li><a href="/speakers">Speakers</a></li><!--
 					--><li><a href="schedule.html">Schedule</a></li><!--
-					--><li><a href="venue.html">Venue</a></li><!--
+					--><li><a href="/venue">Venue</a></li><!--
 					--><li><a href="register.html">Register</a></li>
 				</ul>
 			</nav>
@@ -37,7 +37,7 @@
 					<li><a href="/">Home</a></li><!--
 					--><li><a href="/speakers">Speakers</a></li><!--
 					--><li><a href="schedule.html">Schedule</a></li><!--
-					--><li><a href="venue.html">Venue</a></li><!--
+					--><li><a href="/venue">Venue</a></li><!--
 					--><li><a href="register.html">Register</a></li>
 				</ul>
 			</nav>
