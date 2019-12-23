@@ -23,4 +23,9 @@ class HomeController extends Controller
 	{
 		return view ('venue');
 	}
+
+	public function schedule()
+	{
+		return view('schedule');
+	}
 }

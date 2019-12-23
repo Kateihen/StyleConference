@@ -20,7 +20,7 @@
 				Schedule
 				--><section class="teaser col-1-3">
 					<h5>Schedule</h5>
-					<a href="schedule.html" target="_blank">
+					<a href="/schedule">
 						<img src="{{ URL::asset('img/home/schedule.jpg') }}" alt="Schedule">
 						<h3>Three Inspiring Days</h3>
 					</a>

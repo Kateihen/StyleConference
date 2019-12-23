@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Venue')
+@section('title', '- Venue')
 
 @section('content')
     <div class="row-alt">
