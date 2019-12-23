@@ -17,13 +17,11 @@ class CreateSpeakersTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('twitter');
-            $table->string('site');
+            $table->string('site')->nullable();
             $table->string('event');
             $table->text('event_description');
             $table->text('about_speaker');
             $table->string('filename');
-            $table->string('mime');
-            $table->string('original_filename');
         });
     }
 

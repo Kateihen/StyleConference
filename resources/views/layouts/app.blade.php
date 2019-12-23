@@ -12,18 +12,18 @@
 	
 		<header class="primary-header container clearfix">
 			<h1 class="logo">
-				<a href="index.html">Styles <br/> Conference</a>
+				<a href="/">Styles <br/> Conference</a>
 			</h1>
 			
 			<h3 class="tagline">August 24&ndash;26 &mdash; Chicago, Il.</h3>
 			
 			<nav class="nav primary-nav">
 				<ul>
-					<li><a href="index.html">Home</a></li><!--
-					--><li><a href="speakers.html" target="_blank">Speakers</a></li><!--
-					--><li><a href="schedule.html" target="_blank">Schedule</a></li><!--
-					--><li><a href="venue.html" target="_blank">Venue</a></li><!--
-					--><li><a href="register.html" target="_blank">Register</a></li>
+					<li><a href="/">Home</a></li><!--
+					--><li><a href="/speakers">Speakers</a></li><!--
+					--><li><a href="schedule.html">Schedule</a></li><!--
+					--><li><a href="venue.html">Venue</a></li><!--
+					--><li><a href="register.html">Register</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -34,11 +34,11 @@
 			<small>&copy; Styles Conference</small>
 			<nav class="nav">
 				<ul>
-					<li><a href="index.html">Home</a></li><!--
-					--><li><a href="speakers.html" target="_blank">Speakers</a></li><!--
-					--><li><a href="schedule.html" target="_blank">Schedule</a></li><!--
-					--><li><a href="venue.html" target="_blank">Venue</a></li><!--
-					--><li><a href="register.html" target="_blank">Register</a></li>
+					<li><a href="/">Home</a></li><!--
+					--><li><a href="/speakers">Speakers</a></li><!--
+					--><li><a href="schedule.html">Schedule</a></li><!--
+					--><li><a href="venue.html">Venue</a></li><!--
+					--><li><a href="register.html">Register</a></li>
 				</ul>
 			</nav>
 			</nav>
