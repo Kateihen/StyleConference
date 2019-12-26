@@ -15,3 +15,5 @@ Route::get('/', 'HomeController@index');
 Route::get('/speakers', 'HomeController@speakers');
 Route::get('/venue', 'HomeController@venue');
 Route::get('/schedule', 'HomeController@schedule');
+Route::get('/register', 'RegisterController@home');
+Route::post('/register', 'RegisterController@store');

@@ -7,25 +7,25 @@ use App\Speaker;
 
 class HomeController extends Controller
 {
-	public function index()
-	{
-		return view('index');
-	}
+    public function index()
+    {
+        return view('index');
+    }
 
-	public function speakers()
-	{
-		$speakers = Speaker::all();
+    public function speakers()
+    {
+        $speakers = Speaker::all();
 
-		return view('speakers', ['speakers' => $speakers]);
-	}
+        return view('speakers', ['speakers' => $speakers]);
+    }
 
-	public function venue()
-	{
-		return view ('venue');
-	}
+    public function venue()
+    {
+        return view ('venue');
+    }
 
-	public function schedule()
-	{
-		return view('schedule');
-	}
+    public function schedule()
+    {
+        return view('schedule');
+    }
 }
