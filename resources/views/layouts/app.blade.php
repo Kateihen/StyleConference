@@ -23,14 +23,25 @@
                     --><li><a href="/speakers">Speakers</a></li><!--
                     --><li><a href="/schedule">Schedule</a></li><!--
                     --><li><a href="/venue">Venue</a></li><!--
-                    --><li><a href="/register">Register</a></li>
+                    --><li><a href="/signup">Register</a></li>
                 </ul>
             </nav>
         </header>
 
         @yield('content')
 
+        @if(Auth::check())
+            <div class="container">
+                <form action="/logout" method="POST">
+                @csrf
+                <button value="submit" class="btn btn-default">Logout</button>
+                </form>
+            </div>
+        @endif
+
         <footer class="container primary-footer clearfix">
+
+
             <small>&copy; Styles Conference</small>
             <nav class="nav">
                 <ul>
@@ -38,10 +49,10 @@
                     --><li><a href="/speakers">Speakers</a></li><!--
                     --><li><a href="/schedule">Schedule</a></li><!--
                     --><li><a href="/venue">Venue</a></li><!--
-                    --><li><a href="/register">Register</a></li>
+                    --><li><a href="/signup">Register</a></li>
                 </ul>
             </nav>
-            </nav>
+            
         </footer>
     </body>
 </html>

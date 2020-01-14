@@ -4,7 +4,7 @@
         <section class="hero container">
             <h2>Dedicated to the Craft of Building Websites</h2>
             <p>Every year the brightest web designers and front-end developers descend on Chicago to discuss the latest technologies. Join us this August!</p>
-            <a href="/register" class="btn btn-alt">Register Now</a>
+            <a href="/signup" class="btn btn-alt">Register Now</a>
         </section>
         
         <section class="row">

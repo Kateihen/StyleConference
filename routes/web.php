@@ -15,9 +15,9 @@ Route::get('/', 'HomeController@index');
 Route::get('/speakers', 'HomeController@speakers');
 Route::get('/venue', 'HomeController@venue');
 Route::get('/schedule', 'HomeController@schedule');
-Route::get('/register', 'RegisterController@home');
-Route::post('/register', 'RegisterController@store');
+Route::get('/signup', 'RegisterController@home');
+Route::post('/signup', 'RegisterController@store');
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'ManagerController@home');

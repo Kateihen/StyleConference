@@ -26,7 +26,7 @@
                 </ul>
             </section><!--
                 
-            --><form class="col-1-3" action="/register" method="POST">
+            --><form class="col-1-3" action="/signup" method="POST">
                 @csrf
                 <fieldset class="register-group">
                     <label>
