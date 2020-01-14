@@ -17,3 +17,7 @@ Route::get('/venue', 'HomeController@venue');
 Route::get('/schedule', 'HomeController@schedule');
 Route::get('/register', 'RegisterController@home');
 Route::post('/register', 'RegisterController@store');
+
+Auth::routes(['register' => false]);
+
+Route::get('/home', 'HomeController@index')->name('home');

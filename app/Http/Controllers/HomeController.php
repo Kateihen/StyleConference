@@ -7,6 +7,11 @@ use App\Speaker;
 
 class HomeController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
     public function index()
     {
         return view('index');
@@ -16,12 +21,14 @@ class HomeController extends Controller
     {
         $speakers = Speaker::all();
 
+        // dd($speakers);
+
         return view('speakers', ['speakers' => $speakers]);
     }
 
     public function venue()
     {
-        return view ('venue');
+        return view('venue');
     }
 
     public function schedule()

@@ -14,7 +14,7 @@
         
     <section class="row row-another">
         <div class="grid">
-            
+
             @foreach($speakers as $speaker)
 
             <section class="speaker speaker-alt" id="{{ $speaker->filename }}">
