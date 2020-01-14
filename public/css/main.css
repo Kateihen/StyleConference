@@ -149,6 +149,9 @@ h1, h3, h4, h5, p {
     background: #f0f5f5;
     font-weight: bold;
 }
+.logout-btn {
+    margin-top: 1em;
+}
 .hero {
     padding: 22px 80px 66px 80px;
     line-height: 44px;

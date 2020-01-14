@@ -31,7 +31,7 @@
         @yield('content')
 
         @if(Auth::check())
-            <div class="container">
+            <div class="container logout-btn">
                 <form action="/logout" method="POST">
                 @csrf
                 <button value="submit" class="btn btn-default">Logout</button>
@@ -40,7 +40,6 @@
         @endif
 
         <footer class="container primary-footer clearfix">
-
 
             <small>&copy; Styles Conference</small>
             <nav class="nav">
