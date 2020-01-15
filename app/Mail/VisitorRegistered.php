@@ -10,27 +10,27 @@ use App\Visitor;
 
 class VisitorRegistered extends Mailable
 {
-	use Queueable, SerializesModels;
+    use Queueable, SerializesModels;
 
-	public $visitor;
+    public $visitor;
 
-	/**
-	 * Create a new message instance.
-	 *
-	 * @return void
-	 */
-	public function __construct(Visitor $visitor)
-	{
-		$this->visitor = $visitor;
-	}
+    /**
+     * Create a new message instance.
+     *
+     * @return void
+     */
+    public function __construct(Visitor $visitor)
+    {
+        $this->visitor = $visitor;
+    }
 
-	/**
-	 * Build the message.
-	 *
-	 * @return $this
-	 */
-	public function build()
-	{
-		return $this->markdown('email.visitorregistered');
-	}
+    /**
+     * Build the message.
+     *
+     * @return $this
+     */
+    public function build()
+    {
+        return $this->markdown('email.visitorregistered');
+    }
 }

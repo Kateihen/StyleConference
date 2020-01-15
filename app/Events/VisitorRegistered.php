@@ -7,18 +7,18 @@ use Illuminate\Queue\SerializesModels;
 
 class VisitorRegistered
 {
-	use Dispatchable, SerializesModels;
+    use Dispatchable, SerializesModels;
 
-	public $visitor;
+    public $visitor;
 
-	/**
-	 * Create a new event instance.
-	 *
-	 * @return void
-	 */
-	public function __construct($visitor)
-	{
-		$this->visitor = $visitor;
-	}
+    /**
+     * Create a new event instance.
+     *
+     * @return void
+     */
+    public function __construct($visitor)
+    {
+        $this->visitor = $visitor;
+    }
 
 }
