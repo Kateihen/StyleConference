@@ -17,10 +17,10 @@ use Illuminate\Support\Str;
 */
 
 $factory->define(Visitor::class, function (Faker $faker) {
-	return [
-		'name' => $faker->name,
-		'email' => $faker->unique()->safeEmail,
-		'comments' => $faker->sentence,
-		'num_of_passes' => $faker->numberBetween(1, 5),
-	];
+    return [
+        'name' => $faker->name,
+        'email' => $faker->unique()->safeEmail,
+        'comments' => $faker->sentence,
+        'num_of_passes' => $faker->numberBetween(1, 5),
+    ];
 });

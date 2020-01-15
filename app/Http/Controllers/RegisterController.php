@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Visitor;
+use App\Events\VisitorRegistered;
 
 class RegisterController extends Controller
 {
@@ -17,6 +18,8 @@ class RegisterController extends Controller
         $attributes = $this->validateRegistration();
 
         $visitor = Visitor::create($attributes);
+
+        event(new VisitorRegistered($visitor));
 
         return view('confirm', ['visitor' => $visitor]);
 
