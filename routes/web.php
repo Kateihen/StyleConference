@@ -21,4 +21,4 @@ Route::post('/signup', 'RegisterController@store');
 Auth::routes();
 
 Route::get('/admin', 'ManagerController@home');
-Route::get('list', 'ManagerController@list');
+Route::get('/list', 'ManagerController@list');
