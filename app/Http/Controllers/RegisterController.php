@@ -21,7 +21,9 @@ class RegisterController extends Controller
 
         event(new VisitorRegistered($visitor));
 
-        return view('confirm', ['visitor' => $visitor]);
+        return response()
+            ->view('confirm', ['visitor' => $visitor])
+            ->setStatusCode(201);
 
     }
 
