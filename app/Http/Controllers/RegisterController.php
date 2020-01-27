@@ -8,11 +8,25 @@ use App\Events\VisitorRegistered;
 
 class RegisterController extends Controller
 {
+    /**
+     * Outputs register template.
+     * 
+     * @return mixed
+     */
     public function home()
     {
         return view('register');
     }
 
+    /**
+     * Gets validated user information.
+     * Creates new user and saves it to the database.
+     * Fires event that sends mail to newly registered user.
+     * 
+     * @param  array  $attributes
+     * @param  App\Visitor  $visitor
+     * @return mixed
+     */
     public function store()
     {
         $attributes = $this->validateRegistration();
@@ -27,6 +41,11 @@ class RegisterController extends Controller
 
     }
 
+    /**
+     * Validates user information.
+     * 
+     * @return array
+     */
     public function validateRegistration()
     {
         return \request()->validate([

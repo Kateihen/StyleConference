@@ -1,0 +1,59 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Visitor;
+use App\Events\VisitorRegistered;
+
+class RegisterController extends Controller
+{
+    /**
+     * Outputs register temlate.
+     * 
+     * @return mixed
+     */
+    public function home()
+    {
+        return view('register');
+    }
+
+    /**
+     * Gets validated user information.
+     * Creates new user and saves it to the database.
+     * Fires event that sends mail to newly registered user.
+     * 
+     * @param  array  $attributes
+     * @param  App\Visitor  $visitor
+     * @return mixed
+     */
+    public function store()
+    {
+        $attributes = $this->validateRegistration();
+
+        $visitor = Visitor::create($attributes);
+
+        event(new VisitorRegistered($visitor));
+
+        return response()
+            ->view('confirm', ['visitor' => $visitor])
+            ->setStatusCode(201);
+
+    }
+
+    /**
+     * Validates user information.
+     * 
+     * @return array
+     */
+    public function validateRegistration()
+    {
+        return \request()->validate([
+            'name' => ['required', 'min:3', 'max:255'],
+            'email' => ['required', 'min:3', 'max:255'],
+            'num_of_passes' => ['required'],
+            'comments' => []
+        ]);
+    }
+}
+

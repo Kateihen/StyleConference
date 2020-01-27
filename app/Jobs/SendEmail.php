@@ -10,29 +10,37 @@ use Illuminate\Queue\SerializesModels;
 
 class SendEmail implements ShouldQueue
 {
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+	use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    protected $visitor;
+	/**
+	 * @var App\Visitor
+	 */
+	protected $visitor;
 
-    protected $email;
-    /**
-     * Create a new job instance.
-     *
-     * @return void
-     */
-    public function __construct(Visitor $visitor, Mailable $email)
-    {
-        $this->visitor = $visitor;
-        $this->email = $email;
-    }
+	/**
+	 * @var Illuminate\Mail\Mailable
+	 */
+	protected $email;
 
-    /**
-     * Execute the job.
-     *
-     * @return void
-     */
-    public function handle()
-    {
-        //
-    }
+	/**
+	 * Create a new job instance.
+	 *
+	 * @param  App\Visitor  $visitor
+	 * @return void
+	 */
+	public function __construct(Visitor $visitor, Mailable $email)
+	{
+		$this->visitor = $visitor;
+		$this->email = $email;
+	}
+
+	/**
+	 * Execute the job.
+	 *
+	 * @return void
+	 */
+	public function handle()
+	{
+		//
+	}
 }

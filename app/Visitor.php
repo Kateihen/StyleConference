@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Visitor extends Model
 {
+    /**
+     * The attributes that can be mass assigned.
+     * 
+     * @var array
+     */
     protected $fillable = [
         'name', 'email', 'num_of_passes', 'comments'
     ];

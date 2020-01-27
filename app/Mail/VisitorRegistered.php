@@ -12,11 +12,15 @@ class VisitorRegistered extends Mailable
 {
     use Queueable, SerializesModels;
 
+    /**
+     * @var App\Visitor
+     */
     public $visitor;
 
     /**
      * Create a new message instance.
      *
+     * @param  App\Visitor  $visitor
      * @return void
      */
     public function __construct(Visitor $visitor)
